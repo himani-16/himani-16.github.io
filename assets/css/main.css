@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 @import url("fontawesome-all.min.css");
 
 /*
@@ -71,7 +72,6 @@ input, select, textarea {
 	-ms-appearance: none;
 	appearance: none;
 }
-
 /* Basic */
 
 	@-ms-viewport {
@@ -632,6 +632,7 @@ input, select, textarea {
 
 		.box.style2 {
 			padding: 3.5em 2.5em 3.5em 2.5em;
+			background-color: whitesmoke;
 		}
 
 		@media screen and (max-width: 736px) {
@@ -958,7 +959,7 @@ input, select, textarea {
 		display: inline-block;
 	}
 
-		.image:before {
+		/* .image:before {
 			content: '';
 			position: absolute;
 			left: 0;
@@ -966,11 +967,11 @@ input, select, textarea {
 			width: 100%;
 			height: 100%;
 			background: url("images/overlay.png");
-		}
+		} */
 
 		.image img {
 			display: block;
-			width: 100%;
+			
 		}
 
 		.image.featured {
@@ -1430,6 +1431,7 @@ input, select, textarea {
 		width: 45em;
 		max-width: 100%;
 		margin: 0 auto 2em auto;
+		
 	}
 
 		.gallery article {
@@ -2017,6 +2019,7 @@ input, select, textarea {
 				-webkit-justify-content: -webkit-flex-end;
 				-ms-justify-content: -ms-flex-end;
 				justify-content: flex-end;
+				
 			}
 
 			.main.style2.inactive.left > .content {
@@ -2031,6 +2034,7 @@ input, select, textarea {
 				-webkit-transform: translateX(100%);
 				-ms-transform: translateX(100%);
 				transform: translateX(100%);
+				
 			}
 
 		.main.style3 {
@@ -2043,7 +2047,7 @@ input, select, textarea {
 			}
 
 			.main.style3.primary {
-				background: #ffffff;
+				background: lightblue;
 			}
 
 			.main.style3.secondary {
@@ -2081,7 +2085,7 @@ input, select, textarea {
 		@media screen and (max-width: 1920px) {
 
 			.main.style2 .content {
-				width: 40%;
+				width: 90%;
 			}
 
 		}
@@ -2244,7 +2248,7 @@ input, select, textarea {
 /* Intro */
 
 	#intro {
-		background: url("images/overlay.png"), url("../../images/intro.jpg");
+		background: lightblue;
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, bottom center;
@@ -2253,8 +2257,8 @@ input, select, textarea {
 
 /* One */
 
-	#one {
-		background: url("images/overlay.png"), url("../../images/one.jpg");
+	#education {
+		background: url("images/overlay.png"), url("../../images/two.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
@@ -2262,7 +2266,14 @@ input, select, textarea {
 
 /* Two */
 
-	#two {
+	#experience {
+		background: lightblue;
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
+
+	#projects{
 		background: url("images/overlay.png"), url("../../images/two.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
@@ -2294,13 +2305,80 @@ input, select, textarea {
 			-ms-transform: translateY(100%);
 			transform: translateY(100%);
 		}
-
+		.himani{
+			width: 200px;
+			height: 200px;
+			object-fit: contain;
+		}
+		.about{
+			width: 350px;
+			height: 350px;
+			object-fit: cover;
+			border-radius: 50%;
+		}
+		.education{
+			width: 450px;
+			height: 450px;
+			object-fit: cover;
+			border-radius: 50%;
+		}
+		.myIntro p{
+			font-family: 'Open Sans', sans-serif;
+			font-size:20px;
+			color:#5d6494;
+		}
+		.myName{
+			font-size: 50px;
+			font-weight: 500;
+		}
+		.projectname{
+			font-size: 34px;
+			font-weight: 500;
+			color:blue;
+            letter-spacing: -0.0325em;
+		}
+		.projects1{
+			width: 488px;
+			height: 350px;
+			object-fit: cover;
+		}
+		.projects2{
+			width:522px;
+			height: 400px;
+			object-fit: cover;
+		}
+		.qualities{
+				width: 150px;
+				height: 150px;
+				object-fit: cover;
+				border-radius: 50%;
+		}
+		.resume
+		{
+			background:black;
+			box-shadow: 0 7px 14px -3px rgba(45,35,66,.3), 0 2px 4px 0 rgba(45,35,66,.4), inset 0 -2px 0 0 #cfd1e3;
+			padding: 15px;
+			width: 200px;
+			border-radius: 10px;
+			font-size: 15px;
+			margin: 50px auto auto;
+			cursor: pointer;
+		}
 		@media screen and (max-width: 736px) {
 
 			#contact .box {
 				padding: 1.5em 1.5em 2em 1.5em;
 			}
-
+			.myIntro p{
+				font-size:15px;
+			}
+			.about {
+				width: 250px;
+				height: 250px;
+		}
+		.myName{
+			font-size: 30px;
+			font-weight: 300;
 		}
 
 		@media screen and (max-width: 480px) {
@@ -2310,3 +2388,4 @@ input, select, textarea {
 			}
 
 		}
+	}
