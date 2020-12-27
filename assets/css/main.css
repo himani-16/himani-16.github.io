@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 @import url("fontawesome-all.min.css");
 
 /*
@@ -1164,6 +1165,7 @@ input, select, textarea {
 
 	ul.icons {
 		cursor: default;
+		color: white;
 	}
 
 		ul.icons li {
@@ -1886,23 +1888,28 @@ input, select, textarea {
 			#header {
 				height: 2.5em;
 				line-height: 2.5em;
+				text-align:center;
 			}
 
-				#header h1 {
+				/* #header h1 {
 					text-align: center;
 					position: relative;
 					left: 0;
 					top: 0;
 					height: 2.5em;
 					line-height: 2.5em;
-				}
+				} */
 
-					#header h1 a {
+					/* #header h1 a {
 						font-size: 1em;
-					}
+					} */
 
 				#header nav {
-					display: none;
+					
+					font-size: 13px;
+					position: relative;
+    
+    				right: 0;
 				}
 
 		}
@@ -2085,7 +2092,7 @@ input, select, textarea {
 		@media screen and (max-width: 1920px) {
 
 			.main.style2 .content {
-				width: 90%;
+				width: 100%;
 			}
 
 		}
@@ -2093,7 +2100,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			.main.style2 .content {
-				width: 50%;
+				width: 100%;
 			}
 
 		}
@@ -2125,7 +2132,8 @@ input, select, textarea {
 				}
 
 			.main.style2 {
-				padding: 6em 15px 6em 15px;
+				/* padding: 6em 15px 6em 15px; */
+				flex-direction: column;
 			}
 
 				.main.style2:before, .main.style2:after {
@@ -2172,10 +2180,10 @@ input, select, textarea {
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
-		-moz-justify-content: space-between;
-		-webkit-justify-content: space-between;
-		-ms-justify-content: space-between;
-		justify-content: space-between;
+		-moz-justify-content: center;
+		-webkit-justify-content: center;
+		-ms-justify-content: center;
+		justify-content: center;
 		position: relative;
 		margin: 0;
 		line-height: 1em;
@@ -2273,13 +2281,6 @@ input, select, textarea {
 		background-position: top left, center center;
 	}
 
-	#projects{
-		background: url("images/overlay.png"), url("../../images/two.jpg");
-		background-size: 256px 256px, cover;
-		background-attachment: fixed, fixed;
-		background-position: top left, center center;
-	}
-
 /* Contact */
 
 	#contact {
@@ -2364,6 +2365,37 @@ input, select, textarea {
 			margin: 50px auto auto;
 			cursor: pointer;
 		}
+		.parentContainer{
+
+			display:flex;
+			flex-direction:row;
+			justify-content:space-around;
+			flex-wrap:wrap;
+			
+			
+			}
+			.parent{
+			height:400px;
+			width:47%;
+			border-radius: 4px;
+			background-color: white;
+			box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+			text-align:center;
+			margin:10px;
+			 
+			}
+			.parent p{
+				
+				font-size: 0.9rem;
+				font-family: 'Open Sans', sans-serif;
+				font-weight: 400;
+				letter-spacing: 0.01071em;
+				 
+				}
+				.lang{
+					color: rgb(51, 119, 255);
+    				font-weight: 600;
+				}
 		@media screen and (max-width: 736px) {
 
 			#contact .box {
@@ -2380,12 +2412,16 @@ input, select, textarea {
 			font-size: 30px;
 			font-weight: 300;
 		}
-
-		@media screen and (max-width: 480px) {
-
-			#contact .box {
-				padding: 1em 1em 2em 1em;
-			}
-
+		.parent{
+			width:100%;
 		}
+
+		
+	}
+	@media screen and (max-width: 480px) {
+
+		#contact .box {
+			padding: 1em 1em 2em 1em;
+		}
+
 	}
