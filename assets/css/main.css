@@ -2331,6 +2331,12 @@ input, select, textarea {
 		.myName{
 			font-size: 50px;
 			font-weight: 500;
+			color:#39454b;
+		}
+		.position{
+			font-size: 30px;
+			font-weight: 500;
+			color: palevioletred;
 		}
 		.projectname{
 			font-size: 34px;
